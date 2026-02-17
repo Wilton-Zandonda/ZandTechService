@@ -1,0 +1,323 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background: #58b7e4;
+            color: #0b2b33;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* topo com azul escuro / marinho - sem efeitos */
+        .top-bar {
+            background: #073261; /* azul marinho profundo */
+            padding: 20px 0;
+            border-bottom: 3px solid #1e4b8c;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* espaço entre esquerda e direita */
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        /* lado esquerdo (ícone + texto) */
+        .brand-left {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .logo-icon {
+            width: 70px;
+            height: 70px;
+            background: #1e4b8c;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: 800;
+            border: 2px solid #80b5ff;
+        }
+        .logo-text h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+        }
+        .logo-text .tagline {
+            font-size: 1rem;
+            color: #bfd9ff;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+
+        /* LOGO SUPERIOR DIREITO (QZANDTECH SERVICES) */
+        .logo-right {
+            
+            padding: 8px 20px;
+            border-radius: 5 px;
+            text-align: center;
+        }
+        .logo-right img {
+            width: 200px;   /* altera aqui o tamanho */
+            height: auto;   /* mantém proporção */
+        }
+
+        /* barra de contacto com azul médio */
+        .contact-header {
+            background: #1e3a6b;
+            padding: 14px 0;
+            border-bottom: 2px solid #2f5fa7;
+            color: #ffffff;
+        }
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #112a4a;
+            padding: 6px 20px;
+            border-radius: 40px;
+            color: white;
+            font-weight: 500;
+        }
+        .contact-item i {
+            color: #7bb3ff;
+            font-size: 1.1rem;
+        }
+        .btn-outline-sm {
+            background: transparent;
+            border: 2px solid #7bb3ff;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            transition: 0.2s;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .btn-outline-sm:hover {
+            background: #1e4b8c;
+            border-color: white;
+        }
+
+        /* hero simples */
+        .hero {
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #0a1929;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            max-width: 750px;
+            margin: 0 auto;
+            background: #e4ecff;
+            padding: 16px 30px;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            color: #002856;
+            border: 1px solid #b3cfff;
+        }
+
+        /* títulos secção - tons de azul escuro */
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 60px 0 30px;
+            padding-bottom: 12px;
+            border-bottom: 4px solid #0a1929;
+            color: #0a1e42;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .section-title span {
+            background: #1e4b8c;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        /* grid cartões limpos */
+        .grid-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: rgb(236, 235, 235);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 8px 20px rgba(0,20,50,0.08);
+            border: 1px solid #d3e0ff;
+            transition: 0.15s;
+        }
+        .service-card:hover {
+            box-shadow: 0 12px 28px rgba(10,40,90,0.15);
+        }
+
+        /* imagens maiores */
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 25px;
+        }
+        .card-header img {
+            width: 300px;        /* aumentado */
+            height: 200px;        /* aumentado */
+            object-fit: cover;
+            border-radius: 16px;
+            background: #e4edff;
+            border: 2px solid #1e4b8c;
+            padding: 4px;
+        }
+        .card-header h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0a1a3a;
+        }
+
+        .service-list {
+            list-style: none;
+            margin: 20px 0 20px;
+        }
+        .service-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 1rem;
+            color: #112b4f;
+            padding: 4px 0;
+            border-bottom: 1px dashed #b9d0f0;
+        }
+        .service-list li i {
+            color: #1e4b8c;
+            font-size: 0.9rem;
+            margin-top: 4px;
+            min-width: 18px;
+        }
+
+        .product-tag {
+            background: #e4edff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin: 25px 0 15px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #0a1929;
+            border-left: 5px solid #0a1929;
+            display: inline-block;
+        }
+        .product-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        .product-item {
+            background: #f0f5ff;
+            border: 1px solid #acc6f0;
+            border-radius: 40px;
+            padding: 8px 22px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #0a1e3c;
+        }
+        .product-item i {
+            margin-right: 8px;
+            color: #1e4b8c;
+            font-size: 0.9rem;
+        }
+
+        /* bloco localização tons de azul escuro */
+        .location-block {
+            background: #0a1929;
+            border-radius: 28px;
+            padding: 40px 35px;
+            margin: 70px 0 40px;
+            border: 1px solid #2f5fa7;
+            color: white;
+        }
+        .location-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .loc-info p {
+            font-size: 1.3rem;
+            font-weight: 500;
+            background: #112f55;
+            padding: 12px 30px;
+            border-radius: 60px;
+            border: 1px solid #5885cf;
+            display: inline-block;
+            color: white;
+        }
+        .loc-info i {
+            color: #9ac0ff;
+            margin-right: 12px;
+            font-size: 1.5rem;
+        }
+        .contact-big a {
+            text-decoration: none;
+            color: white;
+            background: #1e4b8c;
+            padding: 16px 30px;
+            border-radius: 60px;
+            display: inline-flex;
+            align-items: center;
+            gap: 18px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 2px solid #7bb3ff;
+            transition: 0.15s;
+            margin: 0 8px;
+        }
+        .contact-big a:hover {
+            background: #2f5fa7;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #ffffff;
+            background: #0a1a2f;
+            border-top: 4px solid #1e4b8c;
+            margin-top: 30px;
+            font-size: 1rem;
+        }
+        .footer p:last-child {
+            margin-top: 12px;
+            color: #b3d0ff;
+        }
